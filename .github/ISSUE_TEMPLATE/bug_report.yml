@@ -1,0 +1,37 @@
+name: 🐞 Bug melden
+description: Kurzes Formular zum Melden von Fehlern
+title: "[Bug] "
+labels: ["bug"]
+
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Kurze Fehlerbeschreibung *
+      placeholder: z. B. NPC greift nicht an
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-behaviour
+    attributes:
+      label: Aktuelles Verhalten *
+      placeholder: Was passiert derzeit im Spiel?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Erwartetes Verhalten *
+      placeholder: Was sollte stattdessen passieren?
+    validations:
+      required: true
+
+  - type: input
+    id: zone
+    attributes:
+      label: Zone *
+      placeholder: z. B. Durotar, Eiskrone, Tiefenbahn
+    validations:
+      required: true
