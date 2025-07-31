@@ -27,6 +27,14 @@ body:
       placeholder: Was sollte stattdessen passieren?
     validations:
       required: true
+      
+  - type: textarea
+    id: WoWHead-Link
+    attributes:
+      label: WoWHead-Link *
+      placeholder: www.wowhead.com?
+    validations:
+      required: true
 
   - type: input
     id: zone
