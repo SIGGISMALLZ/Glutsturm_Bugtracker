@@ -12,6 +12,14 @@ body:
     validations:
       required: true
 
+    - type: input
+    id: involved-npc
+    attributes:
+      label: Involvierter NPC
+      placeholder: z. B. Thrall, Hogger, Lady Sylvanas Windläufer
+    validations:
+      required: false
+
   - type: textarea
     id: current-behaviour
     attributes:
