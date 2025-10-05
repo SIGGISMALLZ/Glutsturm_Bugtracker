@@ -12,11 +12,19 @@ body:
     validations:
       required: true
 
-    - type: input
+  - type: input
     id: involved-npc
     attributes:
       label: Involvierter NPC
       placeholder: z. B. Thrall, Hogger, Lady Sylvanas Windläufer
+    validations:
+      required: false
+
+  - type: input
+    id: affected-character
+    attributes:
+      label: Betroffener Charaktername
+      placeholder: z. B. MeinCharakter, TestChar01
     validations:
       required: false
 
@@ -51,20 +59,3 @@ body:
       placeholder: z. B. Durotar, Eiskrone, Tiefenbahn
     validations:
       required: true
-
-  - type: input
-    id: involved-npc
-    attributes:
-      label: Involvierter NPC
-      placeholder: z. B. Thrall, Hogger, Lady Sylvanas Windläufer
-    validations:
-      required: false
-
-  - type: input
-    id: affected-character
-    attributes:
-      label: Betroffener Charaktername
-      placeholder: z. B. MeinCharakter, TestChar01
-    validations:
-      required: false
-
